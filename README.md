@@ -6,7 +6,7 @@ Convert client onboarding call transcripts into structured AI voice agent config
 
 ## Demo
 
-[![Watch the demo](https://img.youtube.com/vi/D-FsFerMHjU/0.jpg)]([https://youtu.be/D-FsFerMHjU](https://www.loom.com/share/))
+[![Watch the demo]([(https://www.loom.com/share/)])
 
 ## What this project does
 
