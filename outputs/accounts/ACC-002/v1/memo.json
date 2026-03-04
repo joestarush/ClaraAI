@@ -1,0 +1,84 @@
+{
+  "account_id": "ACC-002",
+  "company_name": "ShieldAlarm Systems",
+  "office_address": "Chicago",
+  "business_hours": {
+    "monday": "8:00 AM - 6:00 PM",
+    "tuesday": "8:00 AM - 6:00 PM",
+    "wednesday": "8:00 AM - 6:00 PM",
+    "thursday": "8:00 AM - 6:00 PM",
+    "friday": "8:00 AM - 6:00 PM",
+    "saturday": null,
+    "sunday": null,
+    "timezone": "Central",
+    "notes": null
+  },
+  "services_supported": [
+    "alarm activation calls",
+    "scheduling inspections",
+    "service calls"
+  ],
+  "emergency_definition": "alarm activations",
+  "emergency_routing_rules": [
+    {
+      "condition": "alarm activation",
+      "action": "immediately connect to tech",
+      "phone_number": "312-555-0047",
+      "transfer_timeout_rings": null,
+      "fallback_action": "page tech",
+      "fallback_phone_number": null
+    }
+  ],
+  "non_emergency_routing_rules": [
+    {
+      "condition": "scheduling or service calls",
+      "action": "take message",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    },
+    {
+      "condition": "billing questions",
+      "action": "transfer to Karen",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "call_transfer_rules": [
+    {
+      "scenario": "business hours",
+      "primary_transfer_to": "main office",
+      "primary_phone_number": null,
+      "timeout_rings": null,
+      "fallback": "on-call tech at 312-555-0211"
+    },
+    {
+      "scenario": "after hours",
+      "primary_transfer_to": "on-call tech",
+      "primary_phone_number": "312-555-0211",
+      "timeout_rings": null,
+      "fallback": "monitoring center at 312-555-0047"
+    }
+  ],
+  "integration_constraints": [
+    {
+      "platform": null,
+      "connected": false,
+      "notes": "custom-built internal ticketing system, no integration needed"
+    }
+  ],
+  "after_hours_flow_summary": "calls go to on-call tech, then monitoring center if needed",
+  "office_hours_flow_summary": "calls go to main office, then on-call tech if needed",
+  "questions_or_unknowns": [
+    "What is Karen's direct phone number for billing questions?"
+  ],
+  "notes": [
+    "screen out solicitation calls",
+    "screen out residential alarm monitoring calls"
+  ],
+  "version": "1",
+  "extracted_at": "2026-03-04T19:06:09.419151Z"
+}

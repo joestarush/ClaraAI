@@ -1,0 +1,70 @@
+ONBOARDING CALL TRANSCRIPT
+Account ID: ACC-005
+Company: FireSafe Sprinkler Contractors
+Date: 2024-01-28
+Participants: Onboarding Specialist (Clara), Client Contacts (Paul Nakamura - VP Ops, Aya Matsuda - Admin Manager)
+
+---
+
+Specialist: Paul, Aya, welcome. Let's finalize the FireSafe configuration.
+
+Paul: Aya's been working through all the details.
+
+Aya: Yes, let's go through everything.
+
+Specialist: Business hours — I had seven to four-thirty Pacific, Monday through Friday. Is that confirmed?
+
+Aya: Confirmed. Seven AM to four-thirty PM Pacific, Monday through Friday.
+
+Specialist: Main office number?
+
+Aya: 206-555-0050.
+
+Specialist: Emergency dispatch is 206-555-0077?
+
+Aya: Yes. That's our central dispatch — it's staffed twenty-four seven.
+
+Specialist: Transfer timeout for emergency dispatch?
+
+Aya: They always answer. We've never had an issue. But to be safe, four rings.
+
+Specialist: What happens if they don't answer in four rings?
+
+Paul: That shouldn't happen. But if it does, leave a message and tell the caller we're getting someone on the line. Then the AI should try again once.
+
+Specialist: Got it — retry once, then apologize and advise them to call 911 if it's a life-safety emergency.
+
+Paul: Exactly.
+
+Specialist: Emergency definition: active water discharge, burst pipes from freeze, system impairment causing code violation. Anything to add?
+
+Aya: Yes — if a fire alarm is simultaneously active during a sprinkler issue, treat as critical emergency and instruct caller to evacuate if they haven't already.
+
+Specialist: Good. Adding a critical emergency tier. Non-emergency after-hours?
+
+Aya: Take a message. Name, callback number, property address, and urgency description. Call back next business day.
+
+Specialist: Kenji the project manager — I have him as an internal escalation only?
+
+Paul: Correct. Never give out his number. But if an escalation call comes in from a general contractor we recognize, you can say "I'll connect you with our project team" and transfer to 206-555-0088 — that's the project line, not Kenji's cell.
+
+Specialist: Understood. Updating that.
+
+Specialist: Integration requirements?
+
+Aya: No integrations at this time.
+
+Specialist: Office address?
+
+Aya: 2200 Sixth Avenue, Suite 400, Seattle, Washington 98121.
+
+Specialist: Anything else?
+
+Aya: If someone calls asking about permits or code compliance, the AI should acknowledge the question and say our inspection team will follow up. Don't answer code questions directly.
+
+Paul: One more thing. If a caller mentions a specific project by name or project number, collect that information and flag it in the message. We do track those.
+
+Specialist: Both noted. I think we have everything we need. We'll get the configuration built this week.
+
+---
+END OF TRANSCRIPT

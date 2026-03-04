@@ -1,0 +1,70 @@
+ONBOARDING CALL TRANSCRIPT
+Account ID: ACC-003
+Company: VoltEdge Electrical Services
+Date: 2024-01-26
+Participants: Onboarding Specialist (Clara), Client Contacts (James Whitfield - GM, Priya Chou - Office Manager)
+
+---
+
+Specialist: James, Priya, let's get everything finalized today.
+
+James: Great, Priya knows most of the operational details.
+
+Specialist: Perfect. Business hours — seven to five Monday through Friday Eastern, confirmed?
+
+Priya: Confirmed. Also, we are open Saturday from eight AM to noon. That was finalized last week.
+
+Specialist: Great. And Saturday is regular service hours, not emergency-only?
+
+Priya: Regular service hours, yes. On-call for emergencies runs Saturday afternoon through Sunday.
+
+Specialist: On-call number — Tony at 404-555-0132?
+
+James: Yes, still Tony.
+
+Specialist: And main office during business hours is 404-555-0100?
+
+Priya: Correct.
+
+Specialist: Transfer timeout — how many rings before fallback?
+
+Priya: Four rings.
+
+Specialist: What's the fallback if Tony doesn't answer?
+
+James: Leave a message on Tony's voicemail and also text me. My number is 404-555-0155. The AI shouldn't give out my number — just use it for the behind-the-scenes alert.
+
+Specialist: Understood. We'll document that as an internal escalation contact, not disclosed to callers.
+
+Priya: That's right.
+
+Specialist: Emergency definition confirmed — total power loss, exposed or sparking wiring, fire-related electrical?
+
+James: Add this: any call from a food service business that loses power counts as emergency. Refrigeration loss is a health code issue.
+
+Specialist: Good catch. Adding that. Non-emergencies after hours?
+
+Priya: Standard message — name, number, issue description. We'll call back next business day.
+
+Specialist: Jobber integration — not yet?
+
+Priya: Not yet. We want to assess it after three months.
+
+Specialist: Spanish language support — is that a confirmed requirement?
+
+James: Yes, flag it as a confirmed future requirement. Not blocking launch.
+
+Specialist: Office address?
+
+Priya: 870 Peachtree Street NE, Atlanta, Georgia 30308.
+
+Specialist: Anything else?
+
+Priya: If callers ask for a quote over the phone, the AI should explain that we require a site assessment and offer to schedule one.
+
+Specialist: Done. James, anything else?
+
+James: No, I think that covers it.
+
+---
+END OF TRANSCRIPT

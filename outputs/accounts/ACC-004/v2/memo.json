@@ -1,0 +1,86 @@
+{
+  "account_id": "ACC-004",
+  "company_name": "CoolFlow HVAC Services",
+  "office_address": "5530 Westheimer Road, Suite 200, Houston, Texas 77056",
+  "business_hours": {
+    "monday": "7am-6pm",
+    "tuesday": "7am-6pm",
+    "wednesday": "7am-6pm",
+    "thursday": "7am-6pm",
+    "friday": "7am-6pm",
+    "saturday": "7am-6pm",
+    "sunday": "emergency-only",
+    "timezone": "Central Time",
+    "notes": null
+  },
+  "services_supported": [
+    "installs",
+    "maintenance contracts",
+    "emergency repair"
+  ],
+  "emergency_definition": "No cooling in extreme heat (above 95 degrees) or no heat when it's below 40, or anything with gas smell or CO alarm, or if an elderly or medically vulnerable person is in the home with no heat or cooling in extreme weather",
+  "emergency_routing_rules": [
+    {
+      "condition": "Emergency situation",
+      "action": "Route to emergency line",
+      "phone_number": "713-555-0183",
+      "transfer_timeout_rings": 3,
+      "fallback_action": "Leave voicemail",
+      "fallback_phone_number": null
+    }
+  ],
+  "non_emergency_routing_rules": [
+    {
+      "condition": "Non-emergency situation during office hours",
+      "action": "Route to front desk (Diane)",
+      "phone_number": "713-555-0100",
+      "transfer_timeout_rings": 5,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    },
+    {
+      "condition": "Maintenance agreement renewal calls",
+      "action": "Take name and number, promise callback within one business day",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    },
+    {
+      "condition": "Non-emergency calls after hours",
+      "action": "Take name, phone number, and short description, confirm callback next business day by 10am",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "call_transfer_rules": [
+    {
+      "scenario": "Caller inquires about service repair",
+      "primary_transfer_to": "Front desk (Diane)",
+      "primary_phone_number": "713-555-0100",
+      "timeout_rings": 5,
+      "fallback": "Mention maintenance agreement plan for priority scheduling and discounts"
+    }
+  ],
+  "integration_constraints": [
+    {
+      "platform": "ServiceTitan",
+      "connected": false,
+      "notes": "Future integration to log call info, revisit in sixty days"
+    }
+  ],
+  "after_hours_flow_summary": "Route to 24/7 emergency line at 713-555-0183, or take name and number for non-emergency calls and confirm callback next business day",
+  "office_hours_flow_summary": "Route to front desk (Diane) at 713-555-0100",
+  "questions_or_unknowns": [
+    "ServiceTitan integration details"
+  ],
+  "notes": [
+    "Thirty percent of customers are Spanish-speaking, ideal if agent can greet in English and Spanish and switch if needed",
+    "Filter out vendor solicitations and warranty scam calls",
+    "Mention maintenance agreement plan for priority scheduling and discounts when caller inquires about service repair"
+  ],
+  "version": "2",
+  "extracted_at": "2026-03-04T19:06:18.799476Z"
+}

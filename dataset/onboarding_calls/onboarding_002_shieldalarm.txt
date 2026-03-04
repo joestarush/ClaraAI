@@ -1,0 +1,66 @@
+ONBOARDING CALL TRANSCRIPT
+Account ID: ACC-002
+Company: ShieldAlarm Systems
+Date: 2024-01-25
+Participants: Onboarding Specialist (Clara), Client Contacts (Rebecca Yoon - Owner, Karen Patel - Office Manager)
+
+---
+
+Specialist: Rebecca, Karen, welcome to the onboarding call. Let's lock everything in today.
+
+Rebecca: Sounds good. Karen has most of the details.
+
+Karen: Happy to go through it.
+
+Specialist: Let's start with business hours — Monday through Friday, eight to six Central, confirmed?
+
+Karen: Confirmed. Also closed on major holidays. Standard federal holidays.
+
+Specialist: Noted. On-call number — 312-555-0211, is that still current?
+
+Rebecca: Yes, that's our on-call tech Marcus.
+
+Specialist: And the monitoring center fallback is 312-555-0047?
+
+Rebecca: Correct. That's always live, twenty-four seven.
+
+Specialist: How many rings before escalating to the monitoring center?
+
+Karen: Four rings. If the tech doesn't pick up in four rings, fall back to monitoring.
+
+Specialist: Got it. What about alarm activation calls specifically — do they always go to the tech, or to monitoring first?
+
+Rebecca: During business hours, alarm activations go to our main office line 312-555-0199, then we manually dispatch. After hours, they go straight to the tech.
+
+Specialist: So the main office is 312-555-0199, not the direct line you gave before?
+
+Karen: Right, 312-555-0199 is the main. 312-555-0211 is the on-call cell.
+
+Specialist: Clarified. Billing and office questions — you mentioned Karen's direct line?
+
+Karen: Yes, that's 312-555-0202.
+
+Specialist: Non-emergency service scheduling after hours?
+
+Karen: Take a message — name, callback number, nature of issue. We'll respond within one business day.
+
+Specialist: Office address?
+
+Karen: 1840 West Fulton Street, Chicago, Illinois 60612.
+
+Specialist: Any integration requirements?
+
+Rebecca: No, still no integrations. Custom ticketing, no API access.
+
+Specialist: Anything else?
+
+Rebecca: One thing — if a caller says they have an active alarm activation and it's business hours, the AI should ask if they've already called 911. If not, prompt them to do so before we proceed.
+
+Specialist: That's a great safety step. We'll add that to the emergency flow.
+
+Karen: And please remind callers we don't do residential. It comes up more than you'd think.
+
+Specialist: Noted, we'll screen that clearly.
+
+---
+END OF TRANSCRIPT

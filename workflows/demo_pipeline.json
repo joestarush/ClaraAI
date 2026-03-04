@@ -1,0 +1,176 @@
+{
+  "name": "Clara Answers — Demo Pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "trigger-demo",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "param-account",
+              "name": "account_id",
+              "value": "ACC-001",
+              "type": "string"
+            },
+            {
+              "id": "param-transcript",
+              "name": "transcript_path",
+              "value": "/data/dataset/demo_calls/demo_001_aquaguard.txt",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-params",
+      "name": "Set Parameters",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [460, 300],
+      "notes": "Edit account_id and transcript_path before running."
+    },
+    {
+      "parameters": {
+        "command": "=cat {{ $json.transcript_path }}"
+      },
+      "id": "read-transcript",
+      "name": "Read Transcript File",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "command": "=cd /data/scripts && python extract_demo.py --account {{ $('Set Parameters').item.json.account_id }} --transcript {{ $('Set Parameters').item.json.transcript_path }} 2>&1"
+      },
+      "id": "run-extraction",
+      "name": "Run Demo Extraction",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "command": "=cd /data/scripts && python validate_schema.py memo /data/outputs/accounts/{{ $('Set Parameters').item.json.account_id }}/v1/memo.json 2>&1"
+      },
+      "id": "validate-memo",
+      "name": "Validate Memo Schema",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "check-success",
+              "leftValue": "={{ $json.exitCode }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-valid",
+      "name": "Validation Passed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "command": "=ls -lh /data/outputs/accounts/{{ $('Set Parameters').item.json.account_id }}/v1/"
+      },
+      "id": "verify-outputs",
+      "name": "Verify Output Files",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1560, 200]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "error-msg",
+              "name": "error",
+              "value": "=Schema validation failed for {{ $('Set Parameters').item.json.account_id }}. Check logs.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "handle-error",
+      "name": "Validation Error",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [1560, 420]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [{"node": "Set Parameters", "type": "main", "index": 0}]
+      ]
+    },
+    "Set Parameters": {
+      "main": [
+        [{"node": "Read Transcript File", "type": "main", "index": 0}]
+      ]
+    },
+    "Read Transcript File": {
+      "main": [
+        [{"node": "Run Demo Extraction", "type": "main", "index": 0}]
+      ]
+    },
+    "Run Demo Extraction": {
+      "main": [
+        [{"node": "Validate Memo Schema", "type": "main", "index": 0}]
+      ]
+    },
+    "Validate Memo Schema": {
+      "main": [
+        [{"node": "Validation Passed?", "type": "main", "index": 0}]
+      ]
+    },
+    "Validation Passed?": {
+      "main": [
+        [{"node": "Verify Output Files", "type": "main", "index": 0}],
+        [{"node": "Validation Error", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "instanceId": "clara-answers-demo-pipeline-v1"
+  },
+  "pinData": {},
+  "versionId": "1.0.0",
+  "triggerCount": 0,
+  "tags": [
+    {"name": "clara-answers"},
+    {"name": "demo-pipeline"}
+  ]
+}

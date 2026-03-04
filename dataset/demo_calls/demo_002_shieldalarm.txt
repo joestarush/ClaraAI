@@ -1,0 +1,50 @@
+DEMO CALL TRANSCRIPT
+Account ID: ACC-002
+Company: ShieldAlarm Systems
+Date: 2024-01-11
+Participants: Sales Rep (Clara), Client Contact (Rebecca Yoon, Owner)
+
+---
+
+Clara: Rebecca, thanks for joining. Tell me about ShieldAlarm — what's your core business?
+
+Rebecca: We install and monitor commercial fire alarm systems. Mostly retail, restaurants, warehouses. We're based in Chicago.
+
+Clara: What kind of calls come in most?
+
+Rebecca: Alarm activations are the biggest one. A customer's panel is beeping, or they got a trouble signal, or their alarm went off and they don't know if it was real. Then we also get calls to schedule inspections and service.
+
+Clara: How do you handle alarm activation calls?
+
+Rebecca: Those are always treated as potential emergencies. We need to get a tech on the phone or paged immediately. We have a 24/7 monitoring center but the calls still come into our main line sometimes.
+
+Clara: What's the monitoring center number?
+
+Rebecca: It's 312-555-0047. If the AI can't reach us directly, that number should be the fallback.
+
+Clara: Perfect. And your business hours?
+
+Rebecca: We're open Monday through Friday, eight AM to six PM Central time. After hours we have on-call.
+
+Clara: Do you have an on-call number separate from the monitoring center?
+
+Rebecca: Yeah, the on-call tech is at 312-555-0211. But I want the AI to try the main office first during business hours, then the tech line.
+
+Clara: Understood. What about non-emergency calls — service scheduling, billing questions?
+
+Rebecca: Take a message for scheduling. Billing goes to my office manager, Karen. I'll get you her direct number later.
+
+Clara: Great. Any integrations we should know about?
+
+Rebecca: We use an internal ticketing system but it's custom-built. Nothing off the shelf. So no integration needed for now.
+
+Clara: Any calls you want screened out?
+
+Rebecca: Solicitations, definitely. Also any calls about residential alarm monitoring — we don't do residential.
+
+Clara: Noted. Anything else?
+
+Rebecca: Not that I can think of right now.
+
+---
+END OF TRANSCRIPT

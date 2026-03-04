@@ -1,0 +1,189 @@
+{
+  "name": "Clara Answers — Onboarding Pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "trigger-onboarding",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "param-account",
+              "name": "account_id",
+              "value": "ACC-001",
+              "type": "string"
+            },
+            {
+              "id": "param-transcript",
+              "name": "transcript_path",
+              "value": "/data/dataset/onboarding_calls/onboarding_001_aquaguard.txt",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-params",
+      "name": "Set Parameters",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [460, 300],
+      "notes": "Edit account_id and transcript_path. Demo pipeline must have run first."
+    },
+    {
+      "parameters": {
+        "command": "=test -f /data/outputs/accounts/{{ $json.account_id }}/v1/memo.json && echo 'found' || echo 'missing'"
+      },
+      "id": "check-v1",
+      "name": "Check v1 Memo Exists",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true
+          },
+          "conditions": [
+            {
+              "id": "v1-exists",
+              "leftValue": "={{ $json.stdout.trim() }}",
+              "rightValue": "found",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "v1-exists-check",
+      "name": "v1 Memo Found?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "command": "=cd /data/scripts && python extract_onboarding.py --account {{ $('Set Parameters').item.json.account_id }} --transcript {{ $('Set Parameters').item.json.transcript_path }} 2>&1"
+      },
+      "id": "run-onboarding",
+      "name": "Run Onboarding Extraction",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1120, 200]
+    },
+    {
+      "parameters": {
+        "command": "=cd /data/scripts && python validate_schema.py memo /data/outputs/accounts/{{ $('Set Parameters').item.json.account_id }}/v2/memo.json 2>&1"
+      },
+      "id": "validate-v2",
+      "name": "Validate v2 Memo Schema",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1340, 200]
+    },
+    {
+      "parameters": {
+        "command": "=ls -lh /data/outputs/accounts/{{ $('Set Parameters').item.json.account_id }}/v2/"
+      },
+      "id": "verify-outputs",
+      "name": "Verify v2 Output Files",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1560, 200]
+    },
+    {
+      "parameters": {
+        "command": "=cat /data/outputs/accounts/{{ $('Set Parameters').item.json.account_id }}/v2/changelog.json"
+      },
+      "id": "read-changelog",
+      "name": "Read Changelog",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1780, 200]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "no-v1-error",
+              "name": "error",
+              "value": "=v1 memo not found for {{ $('Set Parameters').item.json.account_id }}. Run demo pipeline first.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "no-v1-error",
+      "name": "No v1 Memo Error",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [1120, 420]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [{"node": "Set Parameters", "type": "main", "index": 0}]
+      ]
+    },
+    "Set Parameters": {
+      "main": [
+        [{"node": "Check v1 Memo Exists", "type": "main", "index": 0}]
+      ]
+    },
+    "Check v1 Memo Exists": {
+      "main": [
+        [{"node": "v1 Memo Found?", "type": "main", "index": 0}]
+      ]
+    },
+    "v1 Memo Found?": {
+      "main": [
+        [{"node": "Run Onboarding Extraction", "type": "main", "index": 0}],
+        [{"node": "No v1 Memo Error", "type": "main", "index": 0}]
+      ]
+    },
+    "Run Onboarding Extraction": {
+      "main": [
+        [{"node": "Validate v2 Memo Schema", "type": "main", "index": 0}]
+      ]
+    },
+    "Validate v2 Memo Schema": {
+      "main": [
+        [{"node": "Verify v2 Output Files", "type": "main", "index": 0}]
+      ]
+    },
+    "Verify v2 Output Files": {
+      "main": [
+        [{"node": "Read Changelog", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "instanceId": "clara-answers-onboarding-pipeline-v1"
+  },
+  "pinData": {},
+  "versionId": "1.0.0",
+  "triggerCount": 0,
+  "tags": [
+    {"name": "clara-answers"},
+    {"name": "onboarding-pipeline"}
+  ]
+}

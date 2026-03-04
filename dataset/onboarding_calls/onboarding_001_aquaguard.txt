@@ -1,0 +1,62 @@
+ONBOARDING CALL TRANSCRIPT
+Account ID: ACC-001
+Company: AquaGuard Fire Protection
+Date: 2024-01-24
+Participants: Onboarding Specialist (Clara), Client Contacts (Mike Torres - Ops Manager, Linda Marsh - Office Manager)
+
+---
+
+Specialist: Mike, Linda — thanks for joining the onboarding call. We'll be locking in the final details today to get your agent configured. Mike, you mentioned you'd confirm business hours?
+
+Mike: Yes, Linda has that.
+
+Linda: We're open Monday through Friday, seven-thirty AM to five PM, Mountain Time.
+
+Specialist: Perfect. And Saturday?
+
+Linda: No Saturday hours. Anything outside of Monday through Friday is after-hours.
+
+Specialist: Got it. Now for the emergency definition — Mike, you said active water discharge or a fire event. Can we add anything to that?
+
+Mike: Yeah, also if a fire panel is showing a supervisory alarm that we can't resolve over the phone.
+
+Specialist: Added. And the on-call tech — is that still Dave at 602-555-0198?
+
+Mike: For now yes. But starting February first it rotates to our tech Sarah at 602-555-0214. We'll need to update that monthly.
+
+Specialist: Understood. We'll document that the on-call number needs monthly updates. Is there one stable escalation number as a fallback?
+
+Linda: Yes, our answering service is always available at 602-555-0300. Use that if the on-call doesn't answer within three rings.
+
+Specialist: Great. What's the timeout — how many rings before falling back?
+
+Linda: Three rings, then fall back.
+
+Specialist: For non-emergency calls during business hours — those route to the main line 602-555-0100?
+
+Linda: Correct. And if it's an inspection scheduling call, just take their name, number, and preferred time window. Don't try to book anything.
+
+Specialist: Got it. Any service calls that go somewhere specific?
+
+Mike: Warranty calls go to Linda directly. Her direct line is 602-555-0101.
+
+Specialist: After-hours non-emergencies?
+
+Linda: Take a message, name and phone number, confirm we'll call back next business day before noon.
+
+Specialist: Office address for the agent greeting?
+
+Linda: We're at 4210 West Indian School Road, Phoenix, Arizona 85031.
+
+Specialist: Any integration requirements confirmed?
+
+Mike: No integrations for now. Keep it simple.
+
+Specialist: Anything else to lock in?
+
+Linda: I think that covers it. Can we add a note that callers should be reminded we are a licensed contractor and not a general handyman service?
+
+Specialist: Absolutely. We'll include that in the agent's handling of unclear calls.
+
+---
+END OF TRANSCRIPT

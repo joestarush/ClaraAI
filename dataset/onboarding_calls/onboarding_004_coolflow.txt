@@ -1,0 +1,70 @@
+ONBOARDING CALL TRANSCRIPT
+Account ID: ACC-004
+Company: CoolFlow HVAC Services
+Date: 2024-01-27
+Participants: Onboarding Specialist (Clara), Client Contacts (Sandra Mejia - Admin, Carlos Rivas - Owner)
+
+---
+
+Specialist: Sandra, Carlos, let's lock in the final details for CoolFlow.
+
+Carlos: Thanks for getting this set up. Sandra knows the operations.
+
+Sandra: Happy to go through it.
+
+Specialist: Business hours — was it seven to six, Monday through Saturday?
+
+Sandra: Confirmed. Seven AM to six PM, Monday through Saturday, Central Time.
+
+Specialist: And Sunday?
+
+Carlos: Sunday is emergency-only. Same as after hours.
+
+Specialist: Emergency line — 713-555-0183, still current?
+
+Sandra: Yes. That goes to our on-call dispatcher, not a specific tech. They route from there.
+
+Specialist: And main office during business hours is 713-555-0100?
+
+Sandra: Yes, Diane's line.
+
+Specialist: Transfer timeout?
+
+Sandra: Five rings for the main office. Three rings for the emergency line — if they don't pick up in three, leave a voicemail and let the caller know someone will call back within thirty minutes.
+
+Specialist: Emergency definition: no cooling above 95°F outside, no heat below 40°F outside, gas smell, CO alarm. Anything to add?
+
+Carlos: Yes — if an elderly or medically vulnerable person is in the home with no heat or cooling in extreme weather, that's also emergency regardless of the outdoor temperature.
+
+Specialist: Added. Non-emergency calls after hours?
+
+Sandra: Take their name, phone number, and a short description. Confirm we'll call back next business day by ten AM.
+
+Specialist: Maintenance agreement renewal calls?
+
+Sandra: Same as before — take name and number, call back within one business day.
+
+Specialist: ServiceTitan integration?
+
+Carlos: Not yet. Let's revisit in sixty days.
+
+Specialist: Spanish language support — thirty percent of callers?
+
+Carlos: Confirmed requirement. If the agent can greet in English and Spanish and switch if needed, that's ideal.
+
+Specialist: We'll flag that as a high-priority future requirement. Office address?
+
+Sandra: 5530 Westheimer Road, Suite 200, Houston, Texas 77056.
+
+Specialist: Anything else?
+
+Carlos: We want the agent to mention our maintenance agreement plan if someone calls about a service repair. Something like: "Ask if they'd like to hear about our maintenance plan for priority scheduling and discounts."
+
+Specialist: Great upsell prompt. We'll include that as a conditional step.
+
+Sandra: And please filter out those warranty scam calls. They're constant.
+
+Specialist: Confirmed. They'll be identified and ended politely.
+
+---
+END OF TRANSCRIPT

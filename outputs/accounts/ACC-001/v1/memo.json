@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-001",
+  "company_name": "AquaGuard Fire Protection",
+  "office_address": "Phoenix",
+  "business_hours": {
+    "monday": null,
+    "tuesday": null,
+    "wednesday": null,
+    "thursday": null,
+    "friday": null,
+    "saturday": "closed",
+    "sunday": "closed",
+    "timezone": null,
+    "notes": "Monday to Friday, exact hours to be confirmed"
+  },
+  "services_supported": [
+    "sprinkler installations",
+    "inspections",
+    "emergency service"
+  ],
+  "emergency_definition": "water is actively discharging or there's a fire event",
+  "emergency_routing_rules": [
+    {
+      "condition": "emergency call",
+      "action": "route to on-call tech",
+      "phone_number": "602-555-0198",
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "non_emergency_routing_rules": [
+    {
+      "condition": "non-emergency call",
+      "action": "handle and route accordingly",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": "take a message or end the call politely",
+      "fallback_phone_number": null
+    }
+  ],
+  "call_transfer_rules": [
+    {
+      "scenario": "emergency call",
+      "primary_transfer_to": "on-call tech",
+      "primary_phone_number": "602-555-0198",
+      "timeout_rings": null,
+      "fallback": null
+    },
+    {
+      "scenario": "non-emergency call",
+      "primary_transfer_to": "main office line",
+      "primary_phone_number": null,
+      "timeout_rings": null,
+      "fallback": null
+    }
+  ],
+  "integration_constraints": [
+    {
+      "platform": "ServiceTitan",
+      "connected": false,
+      "notes": "no logging required"
+    }
+  ],
+  "after_hours_flow_summary": "emergency calls routed to on-call tech",
+  "office_hours_flow_summary": "calls handled and routed accordingly",
+  "questions_or_unknowns": [
+    "What are the exact business hours of AquaGuard Fire Protection?",
+    "What is the timezone of the office?"
+  ],
+  "notes": [
+    "on-call tech number rotates monthly and needs to be updated",
+    "sales calls and vendors should not be routed to the tech line"
+  ],
+  "version": "1",
+  "extracted_at": "2026-03-04T19:06:05.618223Z"
+}

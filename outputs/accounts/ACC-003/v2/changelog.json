@@ -1,0 +1,94 @@
+{
+  "account_id": "ACC-003",
+  "generated_at": "2026-03-04T19:06:17.299111Z",
+  "v1_extracted_at": "2026-03-04T19:06:13.832722Z",
+  "v2_extracted_at": "2026-03-04T19:06:15.454728Z",
+  "total_changes": 11,
+  "changes": [
+    {
+      "type": "updated",
+      "field": "emergency_definition",
+      "old_value": "Total power loss, exposed wiring, equipment sparking or on fire",
+      "new_value": "Total power loss, exposed wiring, equipment sparking or on fire, or any call from a food service business that loses power"
+    },
+    {
+      "type": "updated",
+      "field": "integration_constraints.[0].notes",
+      "old_value": "Not required for initial setup",
+      "new_value": "Not required for initial setup, to be assessed after three months"
+    },
+    {
+      "type": "updated",
+      "field": "after_hours_flow_summary",
+      "old_value": "Route emergency calls to lead electrician on call",
+      "new_value": "Route emergency calls to lead electrician on call, non-emergency calls receive standard message"
+    },
+    {
+      "type": "updated",
+      "field": "emergency_routing_rules.[0]",
+      "old_value": {
+        "condition": "Emergency call",
+        "action": "Route to lead electrician on call",
+        "phone_number": "404-555-0132",
+        "transfer_timeout_rings": null,
+        "fallback_action": null,
+        "fallback_phone_number": null
+      },
+      "new_value": {
+        "condition": "Emergency call",
+        "action": "Route to lead electrician on call",
+        "phone_number": "404-555-0132",
+        "transfer_timeout_rings": 4,
+        "fallback_action": "Leave a message on Tony's voicemail and send a text to James",
+        "fallback_phone_number": "404-555-0155"
+      }
+    },
+    {
+      "type": "updated",
+      "field": "questions_or_unknowns.[0]",
+      "old_value": "Saturday business hours confirmation",
+      "new_value": "Jobber integration details"
+    },
+    {
+      "type": "list_item_added",
+      "field": "non_emergency_routing_rules.[2]",
+      "new_value": {
+        "condition": "Non-emergencies after hours",
+        "action": "Play standard message and request caller's name, number, and issue description",
+        "phone_number": null,
+        "transfer_timeout_rings": null,
+        "fallback_action": null,
+        "fallback_phone_number": null
+      }
+    },
+    {
+      "type": "list_item_added",
+      "field": "notes.[2]",
+      "new_value": "If callers ask for a quote over the phone, the AI should explain that a site assessment is required and offer to schedule one"
+    },
+    {
+      "type": "list_item_removed",
+      "field": "questions_or_unknowns.[1]",
+      "old_value": "Office address"
+    },
+    {
+      "type": "type_changed",
+      "field": "office_address",
+      "old_value": null,
+      "new_value": "870 Peachtree Street NE, Atlanta, Georgia 30308"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.saturday",
+      "old_value": null,
+      "new_value": "8:00 AM - 12:00 PM"
+    },
+    {
+      "type": "type_changed",
+      "field": "non_emergency_routing_rules.[0].transfer_timeout_rings",
+      "old_value": null,
+      "new_value": 4
+    }
+  ],
+  "summary": "11 change(s) detected between v1 and v2."
+}

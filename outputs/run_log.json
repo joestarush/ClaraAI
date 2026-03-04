@@ -1,0 +1,132 @@
+[
+  {
+    "task_id": "ACC-001-v1-demo",
+    "account_id": "ACC-001",
+    "company_name": "AquaGuard Fire Protection",
+    "stage": "demo",
+    "version": "1",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-001/v1/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-001/v1/agent_spec.json"
+    ],
+    "notes": "",
+    "timestamp": "2026-03-04T19:06:07.247827Z"
+  },
+  {
+    "task_id": "ACC-001-v2-onboarding",
+    "account_id": "ACC-001",
+    "company_name": "AquaGuard Fire Protection",
+    "stage": "onboarding",
+    "version": "2",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-001/v2/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-001/v2/agent_spec.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-001/v2/changelog.json"
+    ],
+    "notes": "23 changes from v1 to v2",
+    "timestamp": "2026-03-04T19:06:09.416624Z"
+  },
+  {
+    "task_id": "ACC-002-v1-demo",
+    "account_id": "ACC-002",
+    "company_name": "ShieldAlarm Systems",
+    "stage": "demo",
+    "version": "1",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-002/v1/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-002/v1/agent_spec.json"
+    ],
+    "notes": "",
+    "timestamp": "2026-03-04T19:06:11.152693Z"
+  },
+  {
+    "task_id": "ACC-002-v2-onboarding",
+    "account_id": "ACC-002",
+    "company_name": "ShieldAlarm Systems",
+    "stage": "onboarding",
+    "version": "2",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-002/v2/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-002/v2/agent_spec.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-002/v2/changelog.json"
+    ],
+    "notes": "8 changes from v1 to v2",
+    "timestamp": "2026-03-04T19:06:13.830231Z"
+  },
+  {
+    "task_id": "ACC-003-v1-demo",
+    "account_id": "ACC-003",
+    "company_name": "VoltEdge Electrical Services",
+    "stage": "demo",
+    "version": "1",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-003/v1/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-003/v1/agent_spec.json"
+    ],
+    "notes": "",
+    "timestamp": "2026-03-04T19:06:15.453225Z"
+  },
+  {
+    "task_id": "ACC-003-v2-onboarding",
+    "account_id": "ACC-003",
+    "company_name": "VoltEdge Electrical Services",
+    "stage": "onboarding",
+    "version": "2",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-003/v2/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-003/v2/agent_spec.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-003/v2/changelog.json"
+    ],
+    "notes": "11 changes from v1 to v2",
+    "timestamp": "2026-03-04T19:06:17.299651Z"
+  },
+  {
+    "task_id": "ACC-004-v1-demo",
+    "account_id": "ACC-004",
+    "company_name": "CoolFlow HVAC Services",
+    "stage": "demo",
+    "version": "1",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-004/v1/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-004/v1/agent_spec.json"
+    ],
+    "notes": "",
+    "timestamp": "2026-03-04T19:06:18.797946Z"
+  },
+  {
+    "task_id": "ACC-004-v2-onboarding",
+    "account_id": "ACC-004",
+    "company_name": "CoolFlow HVAC Services",
+    "stage": "onboarding",
+    "version": "2",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-004/v2/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-004/v2/agent_spec.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-004/v2/changelog.json"
+    ],
+    "notes": "23 changes from v1 to v2",
+    "timestamp": "2026-03-04T19:06:29.999090Z"
+  },
+  {
+    "task_id": "ACC-005-v1-demo",
+    "account_id": "ACC-005",
+    "company_name": "FireSafe Sprinkler Contractors",
+    "stage": "demo",
+    "version": "1",
+    "status": "success",
+    "outputs": [
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-005/v1/memo.json",
+      "/home/joestarush/Downloads/ZenTrades/claraAI/outputs/accounts/ACC-005/v1/agent_spec.json"
+    ],
+    "notes": "",
+    "timestamp": "2026-03-04T19:06:38.390708Z"
+  }
+]

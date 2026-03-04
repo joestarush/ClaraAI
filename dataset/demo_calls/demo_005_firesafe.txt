@@ -1,0 +1,46 @@
+DEMO CALL TRANSCRIPT
+Account ID: ACC-005
+Company: FireSafe Sprinkler Contractors
+Date: 2024-01-14
+Participants: Sales Rep (Clara), Client Contact (Paul Nakamura, VP Operations)
+
+---
+
+Clara: Paul, thanks for connecting. Give me a quick picture of what FireSafe does.
+
+Paul: We're a sprinkler contractor based in Seattle. Mostly commercial — offices, warehouses, multifamily housing. We do design, install, inspection, and emergency repair.
+
+Clara: What types of calls do you get most?
+
+Paul: Inspection scheduling is probably the bulk of it. Then we get calls about head replacements, system testing, and the occasional active discharge or freeze damage.
+
+Clara: How do you define an emergency?
+
+Paul: Active water discharge, freeze damage where pipes have burst, or any system impairment that triggers a code violation. Those need immediate response.
+
+Clara: Routing for emergencies?
+
+Paul: Our emergency dispatch is at 206-555-0077. Main office line is 206-555-0050. We also have a project manager named Kenji who handles escalations, but I don't want to give out his cell publicly.
+
+Clara: Understood, we can note that internally. Business hours?
+
+Paul: I think we're seven to four-thirty Monday through Friday, Pacific time. But honestly I should verify that with our admin team.
+
+Clara: We'll flag that as unconfirmed. Any service platform?
+
+Paul: We use Autodesk construction software for project management and a separate system for inspections. Neither needs to be connected to the AI right now.
+
+Clara: What should happen with non-emergency calls after hours?
+
+Paul: Take a message. We'll call back next business day. If someone insists it's urgent but it doesn't meet our emergency definition, the AI should still take the message and note the urgency.
+
+Clara: Good. Any calls to screen?
+
+Paul: Competitor intel gathering, suppliers, and anyone asking for specific project data. Just take a message or end the call.
+
+Clara: Anything else?
+
+Paul: Not right now. I think we need to get our admin team on the onboarding call to nail down the details.
+
+---
+END OF TRANSCRIPT

@@ -1,0 +1,71 @@
+{
+  "account_id": "ACC-004",
+  "company_name": "CoolFlow HVAC Services",
+  "office_address": null,
+  "business_hours": {
+    "monday": null,
+    "tuesday": null,
+    "wednesday": null,
+    "thursday": null,
+    "friday": null,
+    "saturday": null,
+    "sunday": null,
+    "timezone": null,
+    "notes": "Needs confirmation, possibly 7am-6pm Monday through Saturday"
+  },
+  "services_supported": [
+    "installs",
+    "maintenance contracts",
+    "emergency repair"
+  ],
+  "emergency_definition": "No cooling in extreme heat (above 95 degrees) or no heat when it's below 40, or anything with gas smell or CO alarm",
+  "emergency_routing_rules": [
+    {
+      "condition": "Emergency situation",
+      "action": "Route to emergency line",
+      "phone_number": "713-555-0183",
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "non_emergency_routing_rules": [
+    {
+      "condition": "Non-emergency situation during office hours",
+      "action": "Route to front desk (Diane)",
+      "phone_number": "713-555-0100",
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    },
+    {
+      "condition": "Maintenance agreement renewal calls",
+      "action": "Take name and number, promise callback within one business day",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "call_transfer_rules": [],
+  "integration_constraints": [
+    {
+      "platform": "ServiceTitan",
+      "connected": false,
+      "notes": "Future integration to log call info"
+    }
+  ],
+  "after_hours_flow_summary": "Route to 24/7 emergency line at 713-555-0183",
+  "office_hours_flow_summary": "Route to front desk (Diane) at 713-555-0100",
+  "questions_or_unknowns": [
+    "Confirm business hours",
+    "Confirm timezone",
+    "Office address"
+  ],
+  "notes": [
+    "Thirty percent of customers are Spanish-speaking",
+    "Filter out vendor solicitations and warranty scam calls"
+  ],
+  "version": "1",
+  "extracted_at": "2026-03-04T19:06:17.301380Z"
+}

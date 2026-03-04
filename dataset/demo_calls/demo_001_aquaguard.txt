@@ -1,0 +1,50 @@
+DEMO CALL TRANSCRIPT
+Account ID: ACC-001
+Company: AquaGuard Fire Protection
+Date: 2024-01-10
+Participants: Sales Rep (Clara), Client Contact (Mike Torres, Operations Manager)
+
+---
+
+Clara: Hi Mike, thanks for taking the time today. I'd love to learn more about how AquaGuard handles inbound calls so we can see if Clara Answers is a good fit.
+
+Mike: Sure, yeah. So we're a fire protection company based out of Phoenix. We do sprinkler installations, inspections, and emergency service.
+
+Clara: Great. And what does a typical call look like for you?
+
+Mike: It's all over the place honestly. We get people calling because their sprinkler head is leaking, or they need to schedule an annual inspection, or sometimes it's a full-on emergency because a head has gone off and is spraying water everywhere.
+
+Clara: How do you define an emergency?
+
+Mike: If water is actively discharging or there's a fire event, that's an emergency. A leaky head that's just dripping — we treat that as urgent but not emergency. We want someone on scene within four hours for true emergencies.
+
+Clara: And where do those calls go?
+
+Mike: Right now they go to our main office line. If it's after hours, it rolls to our on-call tech. His name is Dave but we'll probably rotate that.
+
+Clara: Do you have a specific number for the on-call tech?
+
+Mike: Yeah it's 602-555-0198. But again, that rotates monthly so we'd need to be able to update that.
+
+Clara: Understood. What are your business hours?
+
+Mike: We're open Monday through Friday. I want to say eight to five but honestly I need to check with the front office. I'll confirm that.
+
+Clara: No problem. What about Saturday?
+
+Mike: No, we don't do Saturday office hours. Emergencies only after hours.
+
+Clara: Got it. Do you have any CRM or service platform you use?
+
+Mike: We use ServiceTitan. We don't need the AI to log anything in there, at least not for now. Just handle the call and route it right.
+
+Clara: That works. Are there any types of calls you absolutely do not want routed to the tech line?
+
+Mike: Yeah, sales calls, vendors, anything that's not a customer with a service issue. Weed those out and either take a message or just end the call politely.
+
+Clara: Makes sense. Any other notes you want us to capture?
+
+Mike: Not right now. I think the main thing is just making sure real emergencies get through fast and everything else is handled cleanly.
+
+---
+END OF TRANSCRIPT

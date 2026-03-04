@@ -1,0 +1,156 @@
+{
+  "account_id": "ACC-004",
+  "generated_at": "2026-03-04T19:06:29.998429Z",
+  "v1_extracted_at": "2026-03-04T19:06:17.301380Z",
+  "v2_extracted_at": "2026-03-04T19:06:18.799476Z",
+  "total_changes": 23,
+  "changes": [
+    {
+      "type": "updated",
+      "field": "emergency_definition",
+      "old_value": "No cooling in extreme heat (above 95 degrees) or no heat when it's below 40, or anything with gas smell or CO alarm",
+      "new_value": "No cooling in extreme heat (above 95 degrees) or no heat when it's below 40, or anything with gas smell or CO alarm, or if an elderly or medically vulnerable person is in the home with no heat or cooling in extreme weather"
+    },
+    {
+      "type": "updated",
+      "field": "integration_constraints.[0].notes",
+      "old_value": "Future integration to log call info",
+      "new_value": "Future integration to log call info, revisit in sixty days"
+    },
+    {
+      "type": "updated",
+      "field": "after_hours_flow_summary",
+      "old_value": "Route to 24/7 emergency line at 713-555-0183",
+      "new_value": "Route to 24/7 emergency line at 713-555-0183, or take name and number for non-emergency calls and confirm callback next business day"
+    },
+    {
+      "type": "updated",
+      "field": "notes.[0]",
+      "old_value": "Thirty percent of customers are Spanish-speaking",
+      "new_value": "Thirty percent of customers are Spanish-speaking, ideal if agent can greet in English and Spanish and switch if needed"
+    },
+    {
+      "type": "updated",
+      "field": "questions_or_unknowns.[0]",
+      "old_value": "Confirm business hours",
+      "new_value": "ServiceTitan integration details"
+    },
+    {
+      "type": "list_item_added",
+      "field": "non_emergency_routing_rules.[2]",
+      "new_value": {
+        "condition": "Non-emergency calls after hours",
+        "action": "Take name, phone number, and short description, confirm callback next business day by 10am",
+        "phone_number": null,
+        "transfer_timeout_rings": null,
+        "fallback_action": null,
+        "fallback_phone_number": null
+      }
+    },
+    {
+      "type": "list_item_added",
+      "field": "call_transfer_rules.[0]",
+      "new_value": {
+        "scenario": "Caller inquires about service repair",
+        "primary_transfer_to": "Front desk (Diane)",
+        "primary_phone_number": "713-555-0100",
+        "timeout_rings": 5,
+        "fallback": "Mention maintenance agreement plan for priority scheduling and discounts"
+      }
+    },
+    {
+      "type": "list_item_added",
+      "field": "notes.[2]",
+      "new_value": "Mention maintenance agreement plan for priority scheduling and discounts when caller inquires about service repair"
+    },
+    {
+      "type": "list_item_removed",
+      "field": "questions_or_unknowns.[1]",
+      "old_value": "Confirm timezone"
+    },
+    {
+      "type": "list_item_removed",
+      "field": "questions_or_unknowns.[2]",
+      "old_value": "Office address"
+    },
+    {
+      "type": "type_changed",
+      "field": "office_address",
+      "old_value": null,
+      "new_value": "5530 Westheimer Road, Suite 200, Houston, Texas 77056"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.monday",
+      "old_value": null,
+      "new_value": "7am-6pm"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.tuesday",
+      "old_value": null,
+      "new_value": "7am-6pm"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.wednesday",
+      "old_value": null,
+      "new_value": "7am-6pm"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.thursday",
+      "old_value": null,
+      "new_value": "7am-6pm"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.friday",
+      "old_value": null,
+      "new_value": "7am-6pm"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.saturday",
+      "old_value": null,
+      "new_value": "7am-6pm"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.sunday",
+      "old_value": null,
+      "new_value": "emergency-only"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.timezone",
+      "old_value": null,
+      "new_value": "Central Time"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.notes",
+      "old_value": "Needs confirmation, possibly 7am-6pm Monday through Saturday",
+      "new_value": null
+    },
+    {
+      "type": "type_changed",
+      "field": "emergency_routing_rules.[0].transfer_timeout_rings",
+      "old_value": null,
+      "new_value": 3
+    },
+    {
+      "type": "type_changed",
+      "field": "emergency_routing_rules.[0].fallback_action",
+      "old_value": null,
+      "new_value": "Leave voicemail"
+    },
+    {
+      "type": "type_changed",
+      "field": "non_emergency_routing_rules.[0].transfer_timeout_rings",
+      "old_value": null,
+      "new_value": 5
+    }
+  ],
+  "summary": "23 change(s) detected between v1 and v2."
+}

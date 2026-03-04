@@ -1,0 +1,86 @@
+{
+  "account_id": "ACC-002",
+  "generated_at": "2026-03-04T19:06:13.829510Z",
+  "v1_extracted_at": "2026-03-04T19:06:09.419151Z",
+  "v2_extracted_at": "2026-03-04T19:06:11.155370Z",
+  "total_changes": 8,
+  "changes": [
+    {
+      "type": "updated",
+      "field": "office_address",
+      "old_value": "Chicago",
+      "new_value": "1840 West Fulton Street, Chicago, Illinois 60612"
+    },
+    {
+      "type": "updated",
+      "field": "call_transfer_rules.[1]",
+      "old_value": {
+        "scenario": "after hours",
+        "primary_transfer_to": "on-call tech",
+        "primary_phone_number": "312-555-0211",
+        "timeout_rings": null,
+        "fallback": "monitoring center at 312-555-0047"
+      },
+      "new_value": {
+        "scenario": "after hours",
+        "primary_transfer_to": "on-call tech",
+        "primary_phone_number": "312-555-0211",
+        "timeout_rings": 4,
+        "fallback": "monitoring center at 312-555-0047"
+      }
+    },
+    {
+      "type": "updated",
+      "field": "call_transfer_rules.[0]",
+      "old_value": {
+        "scenario": "business hours",
+        "primary_transfer_to": "main office",
+        "primary_phone_number": null,
+        "timeout_rings": null,
+        "fallback": "on-call tech at 312-555-0211"
+      },
+      "new_value": {
+        "scenario": "business hours",
+        "primary_transfer_to": "main office",
+        "primary_phone_number": "312-555-0199",
+        "timeout_rings": null,
+        "fallback": "on-call tech at 312-555-0211"
+      }
+    },
+    {
+      "type": "list_item_added",
+      "field": "emergency_routing_rules.[1]",
+      "new_value": {
+        "condition": "alarm activation during business hours",
+        "action": "ask if caller has called 911, then proceed",
+        "phone_number": "312-555-0199",
+        "transfer_timeout_rings": null,
+        "fallback_action": null,
+        "fallback_phone_number": null
+      }
+    },
+    {
+      "type": "list_item_added",
+      "field": "notes.[2]",
+      "new_value": "ask alarm activation callers if they've called 911 during business hours"
+    },
+    {
+      "type": "list_item_removed",
+      "field": "questions_or_unknowns.[0]",
+      "old_value": "What is Karen's direct phone number for billing questions?"
+    },
+    {
+      "type": "type_changed",
+      "field": "business_hours.notes",
+      "old_value": null,
+      "new_value": "Closed on major holidays. Standard federal holidays."
+    },
+    {
+      "type": "type_changed",
+      "field": "non_emergency_routing_rules.[1].phone_number",
+      "old_value": null,
+      "new_value": "312-555-0202"
+    }
+  ],
+  "summary": "8 change(s) detected between v1 and v2."
+}

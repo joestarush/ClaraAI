@@ -1,0 +1,46 @@
+DEMO CALL TRANSCRIPT
+Account ID: ACC-003
+Company: VoltEdge Electrical Services
+Date: 2024-01-12
+Participants: Sales Rep (Clara), Client Contact (James Whitfield, General Manager)
+
+---
+
+Clara: James, great to meet you. Walk me through what VoltEdge does and how calls come in.
+
+James: We're a commercial electrical contractor out of Atlanta. Service calls, emergency electrical outages, panel upgrades, that kind of thing.
+
+Clara: What's your busiest call type?
+
+James: Power outage emergencies, no question. Commercial clients call when a breaker trips and they're dead in the water. Those need immediate response.
+
+Clara: How do you define an electrical emergency?
+
+James: Total power loss, exposed wiring, equipment sparking or on fire — those are all emergencies. Something like "can you come fix an outlet next week" is not.
+
+Clara: And how do you route those?
+
+James: Emergencies go to our lead electrician on call. Right now that's Tony at 404-555-0132. During business hours, calls just come to the main office at 404-555-0100.
+
+Clara: What are your business hours?
+
+James: Monday through Friday, seven AM to five PM Eastern. We're looking at adding Saturday but it's not confirmed yet.
+
+Clara: Noted as a question mark. Do you have a dispatch system?
+
+James: We use Jobber. Our office manager handles all dispatching but we don't need the AI tied into Jobber yet.
+
+Clara: Any languages other than English?
+
+James: About twenty percent of our callers speak Spanish. It would be great if the AI could handle basic Spanish, but it's not a blocker.
+
+Clara: Good to know — we can flag that as a future requirement. Any calls to screen?
+
+James: Competitors fishing for information, cold sales calls, anyone asking for a free quote over the phone — just take a message or politely decline.
+
+Clara: Got it. Anything else you want captured?
+
+James: Not right now. Keep it simple for the demo.
+
+---
+END OF TRANSCRIPT

@@ -1,0 +1,85 @@
+{
+  "account_id": "ACC-005",
+  "company_name": "FireSafe Sprinkler Contractors",
+  "office_address": null,
+  "business_hours": {
+    "monday": null,
+    "tuesday": null,
+    "wednesday": null,
+    "thursday": null,
+    "friday": null,
+    "saturday": null,
+    "sunday": null,
+    "timezone": "Pacific",
+    "notes": "Unconfirmed, potentially 7am-4:30pm Monday through Friday"
+  },
+  "services_supported": [
+    "inspection scheduling",
+    "head replacements",
+    "system testing",
+    "emergency repair"
+  ],
+  "emergency_definition": "Active water discharge, freeze damage where pipes have burst, or any system impairment that triggers a code violation",
+  "emergency_routing_rules": [
+    {
+      "condition": "Emergency as defined",
+      "action": "Route to emergency dispatch",
+      "phone_number": "206-555-0077",
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "non_emergency_routing_rules": [
+    {
+      "condition": "Non-emergency after hours",
+      "action": "Take a message",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": "Call back next business day",
+      "fallback_phone_number": null
+    },
+    {
+      "condition": "Non-emergency during business hours",
+      "action": null,
+      "phone_number": "206-555-0050",
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "call_transfer_rules": [
+    {
+      "scenario": "Escalation",
+      "primary_transfer_to": "Kenji (project manager)",
+      "primary_phone_number": null,
+      "timeout_rings": null,
+      "fallback": null
+    }
+  ],
+  "integration_constraints": [
+    {
+      "platform": "Autodesk construction software",
+      "connected": false,
+      "notes": "Not required for AI integration"
+    },
+    {
+      "platform": "Inspection system",
+      "connected": false,
+      "notes": "Not required for AI integration"
+    }
+  ],
+  "after_hours_flow_summary": "Take a message for non-emergency calls, route emergencies to dispatch",
+  "office_hours_flow_summary": "Answer and route calls based on emergency status and service needs",
+  "questions_or_unknowns": [
+    "Confirm business hours with admin team",
+    "Verify office address",
+    "Determine Kenji's phone number for escalation transfers"
+  ],
+  "notes": [
+    "Competitor intel gathering, suppliers, and project data requests should be screened",
+    "Admin team needs to be involved in onboarding call for details"
+  ],
+  "version": "1",
+  "extracted_at": "2026-03-04T19:06:30.001028Z"
+}

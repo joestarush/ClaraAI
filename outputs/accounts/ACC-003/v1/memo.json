@@ -1,0 +1,70 @@
+{
+  "account_id": "ACC-003",
+  "company_name": "VoltEdge Electrical Services",
+  "office_address": null,
+  "business_hours": {
+    "monday": "7:00 AM - 5:00 PM",
+    "tuesday": "7:00 AM - 5:00 PM",
+    "wednesday": "7:00 AM - 5:00 PM",
+    "thursday": "7:00 AM - 5:00 PM",
+    "friday": "7:00 AM - 5:00 PM",
+    "saturday": null,
+    "sunday": null,
+    "timezone": "Eastern",
+    "notes": null
+  },
+  "services_supported": [
+    "Service calls",
+    "Emergency electrical outages",
+    "Panel upgrades"
+  ],
+  "emergency_definition": "Total power loss, exposed wiring, equipment sparking or on fire",
+  "emergency_routing_rules": [
+    {
+      "condition": "Emergency call",
+      "action": "Route to lead electrician on call",
+      "phone_number": "404-555-0132",
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "non_emergency_routing_rules": [
+    {
+      "condition": "Non-emergency call during business hours",
+      "action": "Route to main office",
+      "phone_number": "404-555-0100",
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    },
+    {
+      "condition": "Competitors or cold sales calls",
+      "action": "Take a message or politely decline",
+      "phone_number": null,
+      "transfer_timeout_rings": null,
+      "fallback_action": null,
+      "fallback_phone_number": null
+    }
+  ],
+  "call_transfer_rules": [],
+  "integration_constraints": [
+    {
+      "platform": "Jobber",
+      "connected": false,
+      "notes": "Not required for initial setup"
+    }
+  ],
+  "after_hours_flow_summary": "Route emergency calls to lead electrician on call",
+  "office_hours_flow_summary": "Route non-emergency calls to main office",
+  "questions_or_unknowns": [
+    "Saturday business hours confirmation",
+    "Office address"
+  ],
+  "notes": [
+    "Twenty percent of callers speak Spanish",
+    "Future requirement: AI handling basic Spanish"
+  ],
+  "version": "1",
+  "extracted_at": "2026-03-04T19:06:13.832722Z"
+}

@@ -1,0 +1,46 @@
+DEMO CALL TRANSCRIPT
+Account ID: ACC-004
+Company: CoolFlow HVAC Services
+Date: 2024-01-13
+Participants: Sales Rep (Clara), Client Contact (Sandra Mejia, Office Administrator)
+
+---
+
+Clara: Sandra, thank you for your time today. Tell me about CoolFlow and how your call volume works.
+
+Sandra: We're a residential and light commercial HVAC company in Houston. We do installs, maintenance contracts, and emergency repair. Summer is our busiest season — AC breakdowns are constant.
+
+Clara: What does a typical call look like?
+
+Sandra: A lot of "my AC stopped working" calls in summer, "my heater isn't working" in winter. We also get calls to renew or schedule maintenance agreements. Those aren't emergencies but they matter to us.
+
+Clara: How do you classify an emergency?
+
+Sandra: No cooling in extreme heat — anything above 95 degrees outside — or no heat when it's below 40. Also anything with gas smell or CO alarm, that's immediate.
+
+Clara: And the routing for emergencies?
+
+Sandra: We have a 24/7 emergency line at 713-555-0183. During office hours, everything comes to 713-555-0100 and Diane at the front desk handles routing.
+
+Clara: What are your business hours?
+
+Sandra: I believe it's seven to six Monday through Saturday. But I need to double-check with our owner, Carlos.
+
+Clara: No problem. Any service management software?
+
+Sandra: We use ServiceTitan. We'd eventually like the AI to log call info in there but that can wait.
+
+Clara: Noted. What about maintenance agreement renewal calls?
+
+Sandra: Take their name and number and say someone will call back within one business day.
+
+Clara: Any calls to filter out?
+
+Sandra: Vendor solicitations, warranty scam calls — those happen a lot in HVAC. Politely end the call.
+
+Clara: Understood. Anything else?
+
+Sandra: We have a lot of Spanish-speaking customers. Probably thirty percent. Being able to serve them would be a big plus.
+
+---
+END OF TRANSCRIPT
